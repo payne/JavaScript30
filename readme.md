@@ -1,4 +1,4 @@
-Please see my [](NOTES.md) file.  Below is the original readme.md contents.
+Please see my [NOTES.md](https://github.com/payne/JavaScript30/blob/master/NOTES.md) file.  Below is the original readme.md contents.
 
 ![](https://javascript30.com/images/JS3-social-share.png)
 
