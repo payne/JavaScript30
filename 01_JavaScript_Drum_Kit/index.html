@@ -64,6 +64,9 @@
   }
   
   function playSoundFromClick(e) {
+    // this works in chrome on OS X.  But it does not work in iOS/iPhone chrome.  Nor in Safari in OS X.
+    // in Safari in OS X, there is an error "undefined is not an object evaluating e.path"
+    // is this a case for jQuery instead of vanilla javascript?
     playSound(e.path[1].attributes[0].nodeValue);
   }
     
