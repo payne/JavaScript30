@@ -6,5 +6,5 @@
 1. All the time my solutions are available at http://mattpayne.org/JavaScript30/ because github pages are mapped to my vanity domain.
 
 ## Day 1
-1. Great tutorial!  Easy to understand and follow along.  I like that c9.io editor has function name completion for javascript.
+1. Great tutorial!  Easy to understand and follow along.  I like that c9.io editor has function name completion for javascript.  [My solution](http://mattpayne.org/JavaScript30/01_JavaScript_Drum_Kit/) meets the goals: press keys to hear sounds.   This project makes me think of [Gene in Bob's Burgers sampling many things](https://www.youtube.com/watch?v=A5EPhmIdOkc)
 
