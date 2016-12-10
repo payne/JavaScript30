@@ -59,10 +59,17 @@
 
 <script>
     
-  function playSound(e) {
-    //console.log(e.keyCode);
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  function playSoundFromKeyDown(e) {
+    playSound(e.keyCode);
+  }
+  
+  function playSoundFromClick(e) {
+    playSound(e.path[1].attributes[0].nodeValue);
+  }
+    
+  function playSound(keyCode) {
+    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${keyCode}"]`);
     //console.log(audio);
     if (!audio) return;
     audio.currentTime = 0; // rewind to start
@@ -82,11 +89,15 @@
   
   const keys = document.querySelectorAll('.key');
   //console.log('keys='+keys);
-  keys.forEach(key => key.addEventListener('transitionend',removeTransistion));
-  window.addEventListener('keydown', playSound);
+  //keys.forEach(key => key.addEventListener('transitionend',removeTransistion));
+  keys.forEach(key => {
+    key.addEventListener('transitionend',removeTransistion);
+    key.addEventListener('click', playSoundFromClick);
+    console.log("Just add click to key="+key);
+  });
+  window.addEventListener('keydown', playSoundFromKeyDown);
   
 </script>
-
 
 </body>
 </html>
