@@ -1,3 +1,5 @@
+Please see my [](NOTES.md) file.  Below is the original readme.md contents.
+
 ![](https://javascript30.com/images/JS3-social-share.png)
 
 # JavaScript30
